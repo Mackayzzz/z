@@ -1,0 +1,1781 @@
+
+        <!DOCTYPE html>
+        <html lang="zh-CN">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>表格对比分析报告</title>
+            <style>
+                body { font-family: 'Microsoft YaHei', Arial, sans-serif; margin: 20px; line-height: 1.6; }
+                .header { background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+                .summary { background-color: #e9ecef; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+                .section { margin-bottom: 30px; }
+                .section h2 { color: #495057; border-bottom: 2px solid #dee2e6; padding-bottom: 10px; }
+                .section h3 { color: #6c757d; }
+                table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+                th, td { border: 1px solid #dee2e6; padding: 8px; text-align: left; }
+                th { background-color: #f8f9fa; font-weight: bold; }
+                .diff-table { font-size: 12px; }
+                .warning { color: #dc3545; font-weight: bold; }
+                .info { color: #0d6efd; }
+                .success { color: #198754; }
+                .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+                .stats-card { background: #f8f9fa; padding: 15px; border-radius: 5px; }
+                .metric { font-size: 24px; font-weight: bold; color: #495057; }
+            </style>
+        </head>
+        <body>
+            <div class="header">
+                <h1>📊 表格对比分析报告</h1>
+                <p><strong>生成时间:</strong> 2025-06-12 05:54:57</p>
+                <p><strong>文件1:</strong> v1.1_period_over_period_index_penetration_of_pig_new_utf8sig.csv</p>
+                <p><strong>文件2:</strong> v2.0_period_over_period_index_penetration_of_pig_new_utf8sig.csv</p>
+            </div>
+            
+            <div class="summary">
+                <h2>📈 概览统计</h2>
+                <div class="stats-grid">
+                    <div class="stats-card">
+                        <div class="metric">421,171</div>
+                        <div>文件1总行数</div>
+                    </div>
+                    <div class="stats-card">
+                        <div class="metric">421,171</div>
+                        <div>文件2总行数</div>
+                    </div>
+                    <div class="stats-card">
+                        <div class="metric">421,171</div>
+                        <div>匹配的记录数</div>
+                    </div>
+                    <div class="stats-card">
+                        <div class="metric">97,924</div>
+                        <div>存在差异的记录数</div>
+                    </div>
+                    <div class="stats-card">
+                        <div class="metric">0</div>
+                        <div>仅在文件1中的记录</div>
+                    </div>
+                    <div class="stats-card">
+                        <div class="metric">0</div>
+                        <div>仅在文件2中的记录</div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="section">
+                <h2>🎯 差异集中的维度分析</h2>
+                <p>以下是不一致记录在各个维度上的分布情况：</p>
+        
+                <div class="stats-card">
+                    <h3>program_running_date</h3>
+                    <table class="diff-table">
+                        <tr><th>维度值</th><th>差异数量</th></tr>
+                <tr><td>2025-06-11</td><td class='warning'>152599</td></tr></table></div>
+                <div class="stats-card">
+                    <h3>stats_dt</h3>
+                    <table class="diff-table">
+                        <tr><th>维度值</th><th>差异数量</th></tr>
+                <tr><td>2024-10-01</td><td class='warning'>9933</td></tr><tr><td>2025-05-01</td><td class='warning'>9930</td></tr><tr><td>2024-09-01</td><td class='warning'>9859</td></tr><tr><td>2025-03-01</td><td class='warning'>9847</td></tr><tr><td>2025-04-01</td><td class='warning'>9777</td></tr><tr><td>2024-12-01</td><td class='warning'>9718</td></tr><tr><td>2024-11-01</td><td class='warning'>9712</td></tr><tr><td>2025-01-01</td><td class='warning'>9594</td></tr><tr><td>2024-08-01</td><td class='warning'>9578</td></tr><tr><td>2025-02-01</td><td class='warning'>9558</td></tr></table></div>
+                <div class="stats-card">
+                    <h3>l1_org_inv_nm</h3>
+                    <table class="diff-table">
+                        <tr><th>维度值</th><th>差异数量</th></tr>
+                <tr><td>温氏股份</td><td class='warning'>152599</td></tr></table></div>
+                <div class="stats-card">
+                    <h3>l2_org_inv_nm</h3>
+                    <table class="diff-table">
+                        <tr><th>维度值</th><th>差异数量</th></tr>
+                <tr><td>猪业一部</td><td class='warning'>52630</td></tr><tr><td>猪业三部</td><td class='warning'>35340</td></tr><tr><td>猪业二部</td><td class='warning'>33730</td></tr><tr><td>养禽事业部</td><td class='warning'>25332</td></tr><tr><td>温氏投资</td><td class='warning'>1689</td></tr><tr><td>集团总部</td><td class='warning'>1161</td></tr><tr><td>海南温氏</td><td class='warning'>927</td></tr><tr><td>中芯种业</td><td class='warning'>822</td></tr><tr><td>鸡业二部</td><td class='warning'>539</td></tr><tr><td>筠诚控股公司</td><td class='warning'>429</td></tr></table></div>
+                <div class="stats-card">
+                    <h3>l3_org_inv_nm</h3>
+                    <table class="diff-table">
+                        <tr><th>维度值</th><th>差异数量</th></tr>
+                <tr><td>江苏养猪公司</td><td class='warning'>12456</td></tr><tr><td>华农温氏</td><td class='warning'>11941</td></tr><tr><td>秦晋养猪公司</td><td class='warning'>11429</td></tr><tr><td>西南养猪公司</td><td class='warning'>11204</td></tr><tr><td>安徽养猪公司</td><td class='warning'>9202</td></tr><tr><td>东北养猪公司</td><td class='warning'>8637</td></tr><tr><td>贵州养猪公司</td><td class='warning'>7806</td></tr><tr><td>湖北养猪公司</td><td class='warning'>7623</td></tr><tr><td>江西养猪公司</td><td class='warning'>7550</td></tr><tr><td>广西养猪公司</td><td class='warning'>7126</td></tr></table></div>
+                <div class="stats-card">
+                    <h3>l4_org_inv_nm</h3>
+                    <table class="diff-table">
+                        <tr><th>维度值</th><th>差异数量</th></tr>
+                <tr><td>福泉公司</td><td class='warning'>3737</td></tr><tr><td>信丰公司</td><td class='warning'>2618</td></tr><tr><td>韶关公司</td><td class='warning'>2576</td></tr><tr><td>英德公司</td><td class='warning'>2523</td></tr><tr><td>清连公司</td><td class='warning'>2335</td></tr><tr><td>新鹤公司</td><td class='warning'>2306</td></tr><tr><td>罗广公司</td><td class='warning'>2205</td></tr><tr><td>新佛公司</td><td class='warning'>2201</td></tr><tr><td>贺桂公司</td><td class='warning'>2100</td></tr><tr><td>揭阳公司</td><td class='warning'>2097</td></tr></table></div>
+                <div class="stats-card">
+                    <h3>org_inv_nm</h3>
+                    <table class="diff-table">
+                        <tr><th>维度值</th><th>差异数量</th></tr>
+                <tr><td>（停用）揭阳博罗饲料厂</td><td class='warning'>768</td></tr><tr><td>（停用）广州钟落潭饲料厂</td><td class='warning'>768</td></tr><tr><td>（停用）药物添加剂华东预混料车间</td><td class='warning'>768</td></tr><tr><td>(停用)埔农饲料厂</td><td class='warning'>768</td></tr><tr><td>新鹤宅梧饲料厂</td><td class='warning'>768</td></tr><tr><td>（停用）福泉温氏饲料有限公司</td><td class='warning'>768</td></tr><tr><td>(停用)阳西养鸡饲</td><td class='warning'>768</td></tr><tr><td>（停用）湘阴饲料厂</td><td class='warning'>768</td></tr><tr><td>武冈饲料厂</td><td class='warning'>768</td></tr><tr><td>（停用）凯里养鸡饲料厂-待处理</td><td class='warning'>768</td></tr></table></div>
+                <div class="stats-card">
+                    <h3>l1_org_inv_dk</h3>
+                    <table class="diff-table">
+                        <tr><th>维度值</th><th>差异数量</th></tr>
+                <tr><td>00000000-0000-0000-0000-000000000000CCE7AED4</td><td class='warning'>152599</td></tr></table></div>
+                <div class="stats-card">
+                    <h3>l2_org_inv_dk</h3>
+                    <table class="diff-table">
+                        <tr><th>维度值</th><th>差异数量</th></tr>
+                <tr><td>bDoAACAKPqrM567U</td><td class='warning'>52630</td></tr><tr><td>bDoAAZa+CnHM567U</td><td class='warning'>35340</td></tr><tr><td>bDoAAL2o1ffM567U</td><td class='warning'>33730</td></tr><tr><td>bDoAACAKPm3M567U</td><td class='warning'>25332</td></tr><tr><td>bDoAAEm8PALM567U</td><td class='warning'>1689</td></tr><tr><td>e5fb68e5-0109-1000-e000-1aa1c0a802deCCE7AED4</td><td class='warning'>1161</td></tr><tr><td>bDoAAVsTq8rM567U</td><td class='warning'>927</td></tr><tr><td>QOoDdaisQ2eMBLcUvHWwo8znrtQ=</td><td class='warning'>822</td></tr><tr><td>Pl/XRVSJhXRJz6YPKIhJ8MznrtQ=</td><td class='warning'>539</td></tr><tr><td>vKy2XsQlSs+770fSAspnMcznrtQ=</td><td class='warning'>429</td></tr></table></div>
+                <div class="stats-card">
+                    <h3>l3_org_inv_dk</h3>
+                    <table class="diff-table">
+                        <tr><th>维度值</th><th>差异数量</th></tr>
+                <tr><td>bDoAAAlCnW7M567U</td><td class='warning'>12456</td></tr><tr><td>e5fb68e5-0109-1000-e002-13aac0a802deCCE7AED4</td><td class='warning'>11941</td></tr><tr><td>bDoAACVgM6HM567U</td><td class='warning'>11429</td></tr><tr><td>bDoAAAlCnTHM567U</td><td class='warning'>11204</td></tr><tr><td>/YeRe87eTSeK5RjMB9JsuMznrtQ=</td><td class='warning'>9202</td></tr><tr><td>bDoAABv40XzM567U</td><td class='warning'>8637</td></tr><tr><td>687PFKmaTV6TDyWjmWtuYMznrtQ=</td><td class='warning'>7806</td></tr><tr><td>e5fb68e5-0109-1000-e002-09c5c0a802deCCE7AED4</td><td class='warning'>7623</td></tr><tr><td>vYdxqbyZQBaSHFNJcFqZ1cznrtQ=</td><td class='warning'>7550</td></tr><tr><td>e5fb68e5-0109-1000-e002-0914c0a802deCCE7AED4</td><td class='warning'>7126</td></tr></table></div>
+                <div class="stats-card">
+                    <h3>l4_org_inv_dk</h3>
+                    <table class="diff-table">
+                        <tr><th>维度值</th><th>差异数量</th></tr>
+                <tr><td>bDoAACGSOsvM567U</td><td class='warning'>3737</td></tr><tr><td>UbLVfgETEADgAFhRfwAAAcznrtQ=</td><td class='warning'>2618</td></tr><tr><td>6bb9ae4b-010b-1000-e000-04cec0a802deCCE7AED4</td><td class='warning'>2576</td></tr><tr><td>e5fb68e5-0109-1000-e002-1582c0a802deCCE7AED4</td><td class='warning'>2523</td></tr><tr><td>e5fb68e5-0109-1000-e002-1551c0a802deCCE7AED4</td><td class='warning'>2335</td></tr><tr><td>e5fb68e5-0109-1000-e002-1438c0a802deCCE7AED4</td><td class='warning'>2306</td></tr><tr><td>JlcrAgEVEADgAEjjCgsCAsznrtQ=</td><td class='warning'>2205</td></tr><tr><td>e5fb68e5-0109-1000-e002-147ec0a802deCCE7AED4</td><td class='warning'>2201</td></tr><tr><td>vf10ukSIQ/iu3/DhYjFKP8znrtQ=</td><td class='warning'>2100</td></tr><tr><td>2c81550a-010a-1000-e001-ae4ac0a802deCCE7AED4</td><td class='warning'>2097</td></tr></table></div>
+                <div class="stats-card">
+                    <h3>org_inv_dk</h3>
+                    <table class="diff-table">
+                        <tr><th>维度值</th><th>差异数量</th></tr>
+                <tr><td>fcbcdf4e-0109-1000-e000-5873c0a802deCCE7AED4</td><td class='warning'>768</td></tr><tr><td>wWhmBQEPEADgAqDYwKgC3sznrtQ=</td><td class='warning'>768</td></tr><tr><td>Jk/X6QEgEADgAUayCgsFAsznrtQ=</td><td class='warning'>768</td></tr><tr><td>XaXH4Wb7Sp+PHLy67Kw9TMznrtQ=</td><td class='warning'>768</td></tr><tr><td>e03d3f1b-010a-1000-e008-3520c0a802deCCE7AED4</td><td class='warning'>768</td></tr><tr><td>bDoAAO4Os8XM567U</td><td class='warning'>768</td></tr><tr><td>p/jjIgEfEADgAhzZCgsCBsznrtQ=</td><td class='warning'>768</td></tr><tr><td>yHaAMaf8Tcq/FK+2anSMqcznrtQ=</td><td class='warning'>768</td></tr><tr><td>qIGqyRJKYkMdzgsnmJVNCMznrtQ=</td><td class='warning'>768</td></tr><tr><td>tTxbkXbTS2qBk2wlh/THF8znrtQ=</td><td class='warning'>768</td></tr></table></div>
+                <div class="stats-card">
+                    <h3>penetration_metric_nm</h3>
+                    <table class="diff-table">
+                        <tr><th>维度值</th><th>差异数量</th></tr>
+                <tr><td>feed_formula_amt_single_ton</td><td class='warning'>68787</td></tr><tr><td>fi22030006_single</td><td class='warning'>11268</td></tr><tr><td>feed_fee_cost_single_ton</td><td class='warning'>8504</td></tr><tr><td>fi_zy_0653_single</td><td class='warning'>6729</td></tr><tr><td>fi_zy_0651_single</td><td class='warning'>6662</td></tr><tr><td>fi22030010_single</td><td class='warning'>6410</td></tr><tr><td>fi_zy_0621_single</td><td class='warning'>6224</td></tr><tr><td>fi_zy_0654_single</td><td class='warning'>6187</td></tr><tr><td>fi_zy_0645_single</td><td class='warning'>5677</td></tr><tr><td>fi_zy_0655_single</td><td class='warning'>5013</td></tr></table></div>
+                <div class="stats-card">
+                    <h3>index_kd</h3>
+                    <table class="diff-table">
+                        <tr><th>维度值</th><th>差异数量</th></tr>
+                <tr><td>ads_feed_factory_mgmt_acctnt_w</td><td class='warning'>77389</td></tr><tr><td>ADS_INDEX_CHANGE_HOG_COST</td><td class='warning'>41618</td></tr><tr><td>ADS_INDEX_CHANGE_BOAR_COST</td><td class='warning'>31179</td></tr><tr><td>ADS_INDEX_CHANGE_HOG_PROFIT</td><td class='warning'>2413</td></tr></table></div>
+                <div class="stats-card">
+                    <h3>index_nm</h3>
+                    <table class="diff-table">
+                        <tr><th>维度值</th><th>差异数量</th></tr>
+                <tr><td>mk02010101_single</td><td class='warning'>16086</td></tr><tr><td>rice_mix_pur_in_amt_single_ton</td><td class='warning'>13359</td></tr><tr><td>sorghum_pur_in_amt_single_ton</td><td class='warning'>12586</td></tr><tr><td>barley_pur_in_amt_single_ton</td><td class='warning'>12402</td></tr><tr><td>bean_pulp_pur_in_amt_single_ton</td><td class='warning'>10207</td></tr><tr><td>grease_pur_in_amt_single_ton</td><td class='warning'>10197</td></tr><tr><td>corn_pur_in_amt_single_ton</td><td class='warning'>10036</td></tr><tr><td>dtmk000011_single</td><td class='warning'>8914</td></tr><tr><td>pd52010209_single</td><td class='warning'>6701</td></tr><tr><td>Net_culling_of_reserve_sows_single</td><td class='warning'>4478</td></tr></table></div></div>
+            <div class="section">
+                <h2>📋 详细差异列表 (前100条)</h2>
+                <p>以下是具体的数据差异详情：</p>
+        
+                <div class="stats-card">
+                    <h4>差异记录 #1</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-07-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 西南养猪公司</li><li><strong>l4_org_inv_nm:</strong> 仪陇公司</li><li><strong>org_inv_nm:</strong> 仪陇福临扩繁场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnTHM567U</li><li><strong>l4_org_inv_dk:</strong> 21jwWzpmTL21qdFa0Im2XMznrtQ=</li><li><strong>org_inv_dk:</strong> bDoAAC99YkvM567U</li><li><strong>penetration_metric_nm:</strong> fi22030010_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> pd52010209_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0041745598427951</td>
+                    <td>0.003888907842338</td>
+                    <td class='warning'>-6.84%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #2</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-01-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 东北养猪公司</li><li><strong>l4_org_inv_nm:</strong> 建平公司</li><li><strong>org_inv_nm:</strong> 建平服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAABv40XzM567U</li><li><strong>l4_org_inv_dk:</strong> nMXOQet2SyGDYz/H+SXv8sznrtQ=</li><li><strong>org_inv_dk:</strong> bDoAABc+upTM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0651_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> mk02010101_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0048713623546063</td>
+                    <td>0.0026125218719244</td>
+                    <td class='warning'>-46.37%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #3</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-05-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 广西养猪公司</li><li><strong>l4_org_inv_nm:</strong> 罗广公司</li><li><strong>org_inv_nm:</strong> 罗广蒲塘种猪二场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-0914c0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> JlcrAgEVEADgAEjjCgsCAsznrtQ=</li><li><strong>org_inv_dk:</strong> BHoTMQETEADgBO3PfwAAAcznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi22030006_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> death_foundation_sows_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-1.4803341627120972</td>
+                    <td>-1.258281707763672</td>
+                    <td class='warning'>-15.00%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #4</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-10-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 江苏养猪公司</li><li><strong>l4_org_inv_nm:</strong> 连云港养猪分公司</li><li><strong>org_inv_nm:</strong> 连云港养猪楼山种猪场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnW7M567U</li><li><strong>l4_org_inv_dk:</strong> 0Af31gEUEADgABCvCgsFAcznrtQ=</li><li><strong>org_inv_dk:</strong> Dj9DCQEdEADgAufnCgsFAcznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi22030006_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> death_reserve_sows_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-1.6967164278030396</td>
+                    <td>-1.4422188997268677</td>
+                    <td class='warning'>-15.00%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #5</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-03-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 东北养猪公司</li><li><strong>l4_org_inv_nm:</strong> 建平公司</li><li><strong>org_inv_nm:</strong> 建平服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAABv40XzM567U</li><li><strong>l4_org_inv_dk:</strong> nMXOQet2SyGDYz/H+SXv8sznrtQ=</li><li><strong>org_inv_dk:</strong> bDoAABc+upTM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0651_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> mk02010101_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0152268903329968</td>
+                    <td>-0.0081662135198712</td>
+                    <td class='warning'>-46.37%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #6</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-10-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 东北养猪公司</li><li><strong>l4_org_inv_nm:</strong> 伊通公司</li><li><strong>org_inv_nm:</strong> 伊通服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAABv40XzM567U</li><li><strong>l4_org_inv_dk:</strong> XayXy8qRTT+r4U3h9usSrMznrtQ=</li><li><strong>org_inv_dk:</strong> bDoAAsKCjE/M567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0648_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> dtpd000722_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0017786077223718</td>
+                    <td>-0.0016667869640514</td>
+                    <td class='warning'>-6.29%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #7</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-03-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 秦晋养猪公司</li><li><strong>l4_org_inv_nm:</strong> 旬邑公司</li><li><strong>org_inv_nm:</strong> 旬邑饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAACVgM6HM567U</li><li><strong>l4_org_inv_dk:</strong> bDoAACLCNEvM567U</li><li><strong>org_inv_dk:</strong> bDoAAyG77fLM567U</li><li><strong>penetration_metric_nm:</strong> feed_formula_amt_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> corn_pur_in_amt_single_ton</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>penetration_status</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                
+                <tr>
+                    <td>penetration_metric</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>penetration_metric_base</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>coefficient</td>
+                    <td>-1.0</td>
+                    <td>0.040483318595348</td>
+                    <td class='warning'>-104.05%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_pr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>related_metric_base</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_cr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>weight_calculation_metric_nm</td>
+                    <td>nan</td>
+                    <td>feed_output</td>
+                    <td class='warning'>类型不同</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #8</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-07-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 秦晋养猪公司</li><li><strong>l4_org_inv_nm:</strong> 垣曲公司</li><li><strong>org_inv_nm:</strong> 垣曲饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAACVgM6HM567U</li><li><strong>l4_org_inv_dk:</strong> bDoAADzLomTM567U</li><li><strong>org_inv_dk:</strong> bDoAAnz9vS3M567U</li><li><strong>penetration_metric_nm:</strong> feed_fee_cost_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> fi23000050</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0705404505133628</td>
+                    <td>0.0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #9</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-05-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 华农温氏</li><li><strong>l4_org_inv_nm:</strong> 新佛公司</li><li><strong>org_inv_nm:</strong> 新佛龙南种猪场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-13aac0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-147ec0a802deCCE7AED4</li><li><strong>org_inv_dk:</strong> e03d3f1b-010a-1000-e004-0431c0a802deCCE7AED4</li><li><strong>penetration_metric_nm:</strong> fi22030012_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> pd52010209_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.4650940001010895</td>
+                    <td>-0.4346595406532287</td>
+                    <td class='warning'>-6.54%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #10</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-05-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 广西养猪公司</li><li><strong>l4_org_inv_nm:</strong> 怀集公司</li><li><strong>org_inv_nm:</strong> 怀集长安种猪场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-0914c0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-0958c0a802deCCE7AED4</li><li><strong>org_inv_dk:</strong> jaoRZAEUEADgAVx0CgsFAcznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi22030012_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> pd52010209_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.3223146200180053</td>
+                    <td>0.3057644069194793</td>
+                    <td class='warning'>-5.13%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #11</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-05-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 江苏养猪公司</li><li><strong>l4_org_inv_nm:</strong> 盐城养猪分公司</li><li><strong>org_inv_nm:</strong> 盐城养猪分公司</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnW7M567U</li><li><strong>l4_org_inv_dk:</strong> JDl81AEXEADgCVnlCgsCAsznrtQ=</li><li><strong>org_inv_dk:</strong> JDl81AEXEADgCVnlCgsCAsznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi_zy_0621_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_PROFIT</li><li><strong>index_nm:</strong> pd52010109_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0031758553814142</td>
+                    <td>-0.0029963483102619</td>
+                    <td class='warning'>-5.65%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #12</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-10-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 广西养猪公司</li><li><strong>l4_org_inv_nm:</strong> 贺桂公司</li><li><strong>org_inv_nm:</strong> 贺桂鹅塘服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-0914c0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> vf10ukSIQ/iu3/DhYjFKP8znrtQ=</li><li><strong>org_inv_dk:</strong> /O0CrhuqS3C/c3+01Bb8GMznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi_zy_0649_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> mk02010101_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0019973900634795</td>
+                    <td>0.0017145838355645</td>
+                    <td class='warning'>-14.16%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #13</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-05-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 西南养猪公司</li><li><strong>l4_org_inv_nm:</strong> 仪陇公司</li><li><strong>org_inv_nm:</strong> 仪陇福临扩繁场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnTHM567U</li><li><strong>l4_org_inv_dk:</strong> 21jwWzpmTL21qdFa0Im2XMznrtQ=</li><li><strong>org_inv_dk:</strong> bDoAAC99YkvM567U</li><li><strong>penetration_metric_nm:</strong> fi22030010_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> pd52010209_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>1.5540008462266997e-05</td>
+                    <td>1.447665363230044e-05</td>
+                    <td class='warning'>-6.84%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #14</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-02-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 秦晋养猪公司</li><li><strong>l4_org_inv_nm:</strong> 咸阳公司</li><li><strong>org_inv_nm:</strong> 咸阳饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAACVgM6HM567U</li><li><strong>l4_org_inv_dk:</strong> 8wAW2QEZEADgBp3ECgsFAsznrtQ=</li><li><strong>org_inv_dk:</strong> bDoAAAvtizjM567U</li><li><strong>penetration_metric_nm:</strong> feed_fee_cost_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> dtfi000211</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0</td>
+                    <td>-2.0710690021514893</td>
+                    <td class='warning'>∞</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #15</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-04-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 江苏养猪公司</li><li><strong>l4_org_inv_nm:</strong> 连云港养猪分公司</li><li><strong>org_inv_nm:</strong> 连云港养猪饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnW7M567U</li><li><strong>l4_org_inv_dk:</strong> 0Af31gEUEADgABCvCgsFAcznrtQ=</li><li><strong>org_inv_dk:</strong> WkKohwEiEADgEA6OCgsFAcznrtQ=</li><li><strong>penetration_metric_nm:</strong> feed_fee_cost_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> dtfi000211</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0</td>
+                    <td>-3.011938571929932</td>
+                    <td class='warning'>∞</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #16</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-09-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 山东养猪公司</li><li><strong>l4_org_inv_nm:</strong> 泰莱公司</li><li><strong>org_inv_nm:</strong> 泰莱公司</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> Ze/3rtqpTiq+9CC585GCk8znrtQ=</li><li><strong>l4_org_inv_dk:</strong> bDoAACOq7RfM567U</li><li><strong>org_inv_dk:</strong> bDoAACOq7RfM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0621_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_PROFIT</li><li><strong>index_nm:</strong> Net_culling_of_reserve_sows_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.188075304031372</td>
+                    <td>-0.0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #17</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-03-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 粤西养猪公司</li><li><strong>l4_org_inv_nm:</strong> 开恩平公司</li><li><strong>org_inv_nm:</strong> 开恩平沙澜种猪场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAJoq3M/M567U</li><li><strong>l4_org_inv_dk:</strong> e5fb68e5-0109-1000-e001-feb9c0a802deCCE7AED4</li><li><strong>org_inv_dk:</strong> fc8915fd-0109-1000-e000-0beec0a802deCCE7AED4</li><li><strong>penetration_metric_nm:</strong> fi22030006_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> death_reserve_sows_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-2.7495651245117188</td>
+                    <td>-1.179400086402893</td>
+                    <td class='warning'>-57.11%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #18</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-06-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 江苏养猪公司</li><li><strong>l4_org_inv_nm:</strong> 宿迁公司</li><li><strong>org_inv_nm:</strong> 宿迁峰山服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnW7M567U</li><li><strong>l4_org_inv_dk:</strong> xKbTkgEZEADgATYgCgsFAsznrtQ=</li><li><strong>org_inv_dk:</strong> E8qCux3kTKOIX0/ToQmjOsznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi_zy_0649_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> pd39010008_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0016438701422885</td>
+                    <td>0.0009360827389173</td>
+                    <td class='warning'>-43.06%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #19</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-08-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 华农温氏</li><li><strong>l4_org_inv_nm:</strong> 新鹤公司</li><li><strong>org_inv_nm:</strong> 新鹤宅梧种猪场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-13aac0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-1438c0a802deCCE7AED4</li><li><strong>org_inv_dk:</strong> e03d3f1b-010a-1000-e004-0d09c0a802deCCE7AED4</li><li><strong>penetration_metric_nm:</strong> fi22030006_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> death_foundation_sows_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>2.5754427909851074</td>
+                    <td>2.189122438430786</td>
+                    <td class='warning'>-15.00%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #20</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-10-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 江西养猪公司</li><li><strong>l4_org_inv_nm:</strong> 吉安养猪公司</li><li><strong>org_inv_nm:</strong> 吉安养猪上犹育肥场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> vYdxqbyZQBaSHFNJcFqZ1cznrtQ=</li><li><strong>l4_org_inv_dk:</strong> kE/Qa+TRSMWryGWYkVf9u8znrtQ=</li><li><strong>org_inv_dk:</strong> bDoAANZrWqTM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0650_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> dtpd000722_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>9.012499049276812e-07</td>
+                    <td>3.460230800556019e-05</td>
+                    <td class='warning'>3739.37%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #21</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-10-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 秦晋养猪公司</li><li><strong>l4_org_inv_nm:</strong> 垣曲公司</li><li><strong>org_inv_nm:</strong> 垣曲舜乡服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAACVgM6HM567U</li><li><strong>l4_org_inv_dk:</strong> bDoAADzLomTM567U</li><li><strong>org_inv_dk:</strong> bDoAAEmcrznM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0654_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> dtmk000011_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-3.741900218301453e-05</td>
+                    <td>-5.717243766412139e-05</td>
+                    <td class='warning'>52.79%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #22</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-08-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 湖北养猪公司</li><li><strong>l4_org_inv_nm:</strong> 安仁养猪公司</li><li><strong>org_inv_nm:</strong> 安仁养猪豪田种猪场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-09c5c0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> Qcnc6hxCRRyshQwk5ApGOsznrtQ=</li><li><strong>org_inv_dk:</strong> bDoAAD7b4KPM567U</li><li><strong>penetration_metric_nm:</strong> fi22030016_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> fi_zy_0644_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0001964925322681</td>
+                    <td>0.0004685976891778</td>
+                    <td class='warning'>138.48%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #23</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-11-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 江西养猪公司</li><li><strong>l4_org_inv_nm:</strong> 揭阳公司</li><li><strong>org_inv_nm:</strong> （停用）揭阳博罗饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> vYdxqbyZQBaSHFNJcFqZ1cznrtQ=</li><li><strong>l4_org_inv_dk:</strong> 2c81550a-010a-1000-e001-ae4ac0a802deCCE7AED4</li><li><strong>org_inv_dk:</strong> fcbcdf4e-0109-1000-e000-5873c0a802deCCE7AED4</li><li><strong>penetration_metric_nm:</strong> feed_formula_amt_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> grease_pur_in_amt_single_ton</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>penetration_status</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                
+                <tr>
+                    <td>penetration_metric</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>penetration_metric_base</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>coefficient</td>
+                    <td>-1.0</td>
+                    <td>0.1134758887809796</td>
+                    <td class='warning'>-111.35%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_pr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>related_metric_base</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_cr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>weight_calculation_metric_nm</td>
+                    <td>nan</td>
+                    <td>feed_output</td>
+                    <td class='warning'>类型不同</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #24</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-04-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 养禽事业部</li><li><strong>l3_org_inv_nm:</strong> 广西养禽公司</li><li><strong>l4_org_inv_nm:</strong> 玉林公司</li><li><strong>org_inv_nm:</strong> 玉林饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPm3M567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-0612c0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-0652c0a802deCCE7AED4</li><li><strong>org_inv_dk:</strong> 00742ac6-010a-1000-e000-9db4c0a802deCCE7AED4</li><li><strong>penetration_metric_nm:</strong> feed_formula_amt_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> grease_pur_in_amt_single_ton</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>penetration_status</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                
+                <tr>
+                    <td>coefficient</td>
+                    <td>-1.0</td>
+                    <td>0.1134758887809796</td>
+                    <td class='warning'>-111.35%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_cr</td>
+                    <td>nan</td>
+                    <td>80.78797912597656</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>weight_calculation_metric_nm</td>
+                    <td>nan</td>
+                    <td>feed_output</td>
+                    <td class='warning'>类型不同</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #25</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-09-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 江苏养猪公司</li><li><strong>l4_org_inv_nm:</strong> 淮州公司</li><li><strong>org_inv_nm:</strong> 淮州大胡种猪场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnW7M567U</li><li><strong>l4_org_inv_dk:</strong> bDoAACzmynDM567U</li><li><strong>org_inv_dk:</strong> bDoAADIernLM567U</li><li><strong>penetration_metric_nm:</strong> fi22030016_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> fi_zy_0644_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-1.5065455436706543</td>
+                    <td>-1.133982539176941</td>
+                    <td class='warning'>-24.73%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #26</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-05-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 湖南养猪公司</li><li><strong>l4_org_inv_nm:</strong> 江永公司</li><li><strong>org_inv_nm:</strong> 江永饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAALccnaHM567U</li><li><strong>l4_org_inv_dk:</strong> ocbdTBGeQbu1O3TQr/0ePsznrtQ=</li><li><strong>org_inv_dk:</strong> bDoAADxVUejM567U</li><li><strong>penetration_metric_nm:</strong> feed_formula_amt_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> barley_pur_in_amt_single_ton</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>penetration_status</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                
+                <tr>
+                    <td>coefficient</td>
+                    <td>-1.0000000000000002</td>
+                    <td>-0.0046135895349799</td>
+                    <td class='warning'>-99.54%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_cr</td>
+                    <td>nan</td>
+                    <td>-0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>weight_calculation_metric_nm</td>
+                    <td>nan</td>
+                    <td>feed_output</td>
+                    <td class='warning'>类型不同</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #27</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-05-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 华北养猪公司</li><li><strong>l4_org_inv_nm:</strong> 沧盐公司</li><li><strong>org_inv_nm:</strong> 沧盐公司</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> A3bSmAEREADgBgEQfwAAAcznrtQ=</li><li><strong>l4_org_inv_dk:</strong> bDoAAgheYg3M567U</li><li><strong>org_inv_dk:</strong> bDoAAgheYg3M567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0621_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_PROFIT</li><li><strong>index_nm:</strong> Net_culling_of_reserve_sows_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.10987189412117</td>
+                    <td>0.0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #28</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-12-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 江苏养猪公司</li><li><strong>l4_org_inv_nm:</strong> 徐州公司</li><li><strong>org_inv_nm:</strong> 徐州饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnW7M567U</li><li><strong>l4_org_inv_dk:</strong> B7manoByS8SeZTjFKC9ILcznrtQ=</li><li><strong>org_inv_dk:</strong> bDoAABdincHM567U</li><li><strong>penetration_metric_nm:</strong> feed_fee_cost_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> feed_output_ton</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>1.952544331550598</td>
+                    <td>1.6871317625045776</td>
+                    <td class='warning'>-13.59%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #29</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-11-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 广西养猪公司</li><li><strong>l4_org_inv_nm:</strong> 罗广公司</li><li><strong>org_inv_nm:</strong> 罗广大洋种猪场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-0914c0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> JlcrAgEVEADgAEjjCgsCAsznrtQ=</li><li><strong>org_inv_dk:</strong> Kv/utwEREADgAI9NfwAAAcznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi22030013_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> dtfi000374_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.1667923033237457</td>
+                    <td>-0.1768655925989151</td>
+                    <td class='warning'>6.04%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #30</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-11-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 山东养猪公司</li><li><strong>l4_org_inv_nm:</strong> 聊城公司</li><li><strong>org_inv_nm:</strong> 聊城崇文服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> Ze/3rtqpTiq+9CC585GCk8znrtQ=</li><li><strong>l4_org_inv_dk:</strong> bDoAAgpjR2rM567U</li><li><strong>org_inv_dk:</strong> bDoAADGEuHDM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0651_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> mk02010101_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0622192397713661</td>
+                    <td>-0.0333683118224144</td>
+                    <td class='warning'>-46.37%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #31</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-11-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 江苏养猪公司</li><li><strong>l4_org_inv_nm:</strong> 淮阴公司</li><li><strong>org_inv_nm:</strong> 淮阴明远服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnW7M567U</li><li><strong>l4_org_inv_dk:</strong> bDoAACDbXxDM567U</li><li><strong>org_inv_dk:</strong> bDoAACc//3rM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0653_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> dtmk000011_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0014926741132512</td>
+                    <td>-0.0018750134622678</td>
+                    <td class='warning'>25.61%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #32</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-11-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 江苏养猪公司</li><li><strong>l4_org_inv_nm:</strong> 宿迁公司</li><li><strong>org_inv_nm:</strong> 宿迁张郭育肥场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnW7M567U</li><li><strong>l4_org_inv_dk:</strong> xKbTkgEZEADgATYgCgsFAsznrtQ=</li><li><strong>org_inv_dk:</strong> bDoAAXWKrO/M567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0648_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> dtpd000722_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0386120565235614</td>
+                    <td>-0.0364561825990676</td>
+                    <td class='warning'>-5.58%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #33</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-01-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 江西养猪公司</li><li><strong>l4_org_inv_nm:</strong> 吉安养猪公司</li><li><strong>org_inv_nm:</strong> 吉安养猪饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> vYdxqbyZQBaSHFNJcFqZ1cznrtQ=</li><li><strong>l4_org_inv_dk:</strong> kE/Qa+TRSMWryGWYkVf9u8znrtQ=</li><li><strong>org_inv_dk:</strong> bDoAADIeDd/M567U</li><li><strong>penetration_metric_nm:</strong> feed_formula_amt_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> rice_mix_pur_in_amt_single_ton</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>penetration_status</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td class='warning'>100.00%</td>
+                </tr>
+                
+                <tr>
+                    <td>coefficient</td>
+                    <td>-1.0</td>
+                    <td>0.0049133155482709</td>
+                    <td class='warning'>-100.49%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_pr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>related_metric_base</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #34</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-03-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 山东养猪公司</li><li><strong>l4_org_inv_nm:</strong> 宁济公司</li><li><strong>org_inv_nm:</strong> 宁济堽城种猪场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> Ze/3rtqpTiq+9CC585GCk8znrtQ=</li><li><strong>l4_org_inv_dk:</strong> bDoAAgpgrtTM567U</li><li><strong>org_inv_dk:</strong> bDoAAJiJ3rXM567U</li><li><strong>penetration_metric_nm:</strong> fi22030016_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> fi_zy_0644_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.2277017384767532</td>
+                    <td>0.118416890501976</td>
+                    <td class='warning'>-47.99%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #35</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-05-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 湖北养猪公司</li><li><strong>l4_org_inv_nm:</strong> 孝团养猪公司</li><li><strong>org_inv_nm:</strong> 孝团养猪花园服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-09c5c0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> bDoAAgpgrXnM567U</li><li><strong>org_inv_dk:</strong> VkIp0rXsQ3e0BLPvdba5SMznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi_zy_0649_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> mk02010101_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0106940576806664</td>
+                    <td>0.0070298486389219</td>
+                    <td class='warning'>-34.26%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #36</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-03-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 养禽事业部</li><li><strong>l3_org_inv_nm:</strong> 广西养禽公司</li><li><strong>l4_org_inv_nm:</strong> 桂林公司</li><li><strong>org_inv_nm:</strong> 桂林饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPm3M567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-0612c0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-06c3c0a802deCCE7AED4</li><li><strong>org_inv_dk:</strong> 00742ac6-010a-1000-e000-b406c0a802deCCE7AED4</li><li><strong>penetration_metric_nm:</strong> feed_formula_amt_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> barley_pur_in_amt_single_ton</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>penetration_status</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                
+                <tr>
+                    <td>coefficient</td>
+                    <td>-1.0000000000000002</td>
+                    <td>-0.0046135895349799</td>
+                    <td class='warning'>-99.54%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_pr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>related_metric_base</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_cr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>weight_calculation_metric_nm</td>
+                    <td>nan</td>
+                    <td>feed_output</td>
+                    <td class='warning'>类型不同</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #37</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-05-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 江西养猪公司</li><li><strong>l4_org_inv_nm:</strong> 揭阳公司</li><li><strong>org_inv_nm:</strong> 揭阳平远服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> vYdxqbyZQBaSHFNJcFqZ1cznrtQ=</li><li><strong>l4_org_inv_dk:</strong> 2c81550a-010a-1000-e001-ae4ac0a802deCCE7AED4</li><li><strong>org_inv_dk:</strong> bDoAAmZ+t+jM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0648_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> dtpd000722_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0143412481993436</td>
+                    <td>-0.0010855698492377</td>
+                    <td class='warning'>-92.43%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #38</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-11-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 华农温氏</li><li><strong>l4_org_inv_nm:</strong> 韶关公司</li><li><strong>org_inv_nm:</strong> （停用）韶关河富种猪二场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-13aac0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> 6bb9ae4b-010b-1000-e000-04cec0a802deCCE7AED4</li><li><strong>org_inv_dk:</strong> jlK20QEfEADgELKLCgsFAsznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi22030010_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> pd52010209_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0042282133363187</td>
+                    <td>0.0039388900622725</td>
+                    <td class='warning'>-6.84%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #39</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-09-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 湖北养猪公司</li><li><strong>l4_org_inv_nm:</strong> 孝团养猪公司</li><li><strong>org_inv_nm:</strong> 孝团养猪花园服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-09c5c0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> bDoAAgpgrXnM567U</li><li><strong>org_inv_dk:</strong> VkIp0rXsQ3e0BLPvdba5SMznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi_zy_0656_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> fi23000001</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0047688893973827</td>
+                    <td>-0.007750395219773</td>
+                    <td class='warning'>62.52%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #40</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-10-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 养禽事业部</li><li><strong>l3_org_inv_nm:</strong> 广东养鸡公司</li><li><strong>l4_org_inv_nm:</strong> 郁南公司</li><li><strong>org_inv_nm:</strong> 郁南饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPm3M567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e001-fbc6c0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> 3f650555-010a-1000-e002-864ec0a802deCCE7AED4</li><li><strong>org_inv_dk:</strong> 3f650555-010a-1000-e002-932bc0a802deCCE7AED4</li><li><strong>penetration_metric_nm:</strong> feed_fee_cost_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> fi23000046</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.1280184835195541</td>
+                    <td>-0.0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #41</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-05-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 山东养猪公司</li><li><strong>l4_org_inv_nm:</strong> 聊城公司</li><li><strong>org_inv_nm:</strong> 聊城崇文服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> Ze/3rtqpTiq+9CC585GCk8znrtQ=</li><li><strong>l4_org_inv_dk:</strong> bDoAAgpjR2rM567U</li><li><strong>org_inv_dk:</strong> bDoAADGEuHDM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0655_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> dtmk000011_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.009484983049333</td>
+                    <td>0.0087673990055918</td>
+                    <td class='warning'>-7.57%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #42</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-12-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 湖南养猪公司</li><li><strong>l4_org_inv_nm:</strong> 江永公司</li><li><strong>org_inv_nm:</strong> 江永饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAALccnaHM567U</li><li><strong>l4_org_inv_dk:</strong> ocbdTBGeQbu1O3TQr/0ePsznrtQ=</li><li><strong>org_inv_dk:</strong> bDoAADxVUejM567U</li><li><strong>penetration_metric_nm:</strong> feed_formula_amt_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> rice_mix_pur_in_amt_single_ton</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>penetration_status</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                
+                <tr>
+                    <td>coefficient</td>
+                    <td>-1.0</td>
+                    <td>0.0049133155482709</td>
+                    <td class='warning'>-100.49%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_pr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>related_metric_base</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_cr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>weight_calculation_metric_nm</td>
+                    <td>nan</td>
+                    <td>feed_output</td>
+                    <td class='warning'>类型不同</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #43</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-07-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 养禽事业部</li><li><strong>l3_org_inv_nm:</strong> 西南养禽公司</li><li><strong>l4_org_inv_nm:</strong> 眉山公司</li><li><strong>org_inv_nm:</strong> 眉山饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPm3M567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-0b5ec0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> SCRE7wENEADgDYdOwKgC3sznrtQ=</li><li><strong>org_inv_dk:</strong> lq2WpAETEADgC4jqfwAAAcznrtQ=</li><li><strong>penetration_metric_nm:</strong> feed_formula_amt_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> barley_pur_in_amt_single_ton</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>penetration_status</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                
+                <tr>
+                    <td>coefficient</td>
+                    <td>-1.0000000000000002</td>
+                    <td>-0.0046135895349799</td>
+                    <td class='warning'>-99.54%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_pr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>related_metric_base</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_cr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>weight_calculation_metric_nm</td>
+                    <td>nan</td>
+                    <td>feed_output</td>
+                    <td class='warning'>类型不同</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #44</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-01-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 东北养猪公司</li><li><strong>l4_org_inv_nm:</strong> 元宝山公司</li><li><strong>org_inv_nm:</strong> 元宝山公司</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAABv40XzM567U</li><li><strong>l4_org_inv_dk:</strong> Ob9gh6W6Rsixu02dvv3Ub8znrtQ=</li><li><strong>org_inv_dk:</strong> Ob9gh6W6Rsixu02dvv3Ub8znrtQ=</li><li><strong>penetration_metric_nm:</strong> fi_zy_0621_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_PROFIT</li><li><strong>index_nm:</strong> pd52010110_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0030940733850002</td>
+                    <td>-0.0035424130037426</td>
+                    <td class='warning'>14.49%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #45</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-01-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 江西养猪公司</li><li><strong>l4_org_inv_nm:</strong> 信丰公司</li><li><strong>org_inv_nm:</strong> 信丰古陂服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> vYdxqbyZQBaSHFNJcFqZ1cznrtQ=</li><li><strong>l4_org_inv_dk:</strong> UbLVfgETEADgAFhRfwAAAcznrtQ=</li><li><strong>org_inv_dk:</strong> UbD0bQETEADgAFhrfwAAAcznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi_zy_0656_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> fi23000002</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0028289619367569</td>
+                    <td>-0.0130163598805665</td>
+                    <td class='warning'>360.11%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #46</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-04-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 湖南养猪公司</li><li><strong>l4_org_inv_nm:</strong> 江永公司</li><li><strong>org_inv_nm:</strong> 江永潇浦服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAALccnaHM567U</li><li><strong>l4_org_inv_dk:</strong> ocbdTBGeQbu1O3TQr/0ePsznrtQ=</li><li><strong>org_inv_dk:</strong> bDoAAAGlS2TM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0656_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> fi23000002</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0006051491945981</td>
+                    <td>-0.0027843569405376</td>
+                    <td class='warning'>360.11%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #47</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-02-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 东北养猪公司</li><li><strong>l4_org_inv_nm:</strong> 建平公司</li><li><strong>org_inv_nm:</strong> 建平新邱种猪场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAABv40XzM567U</li><li><strong>l4_org_inv_dk:</strong> nMXOQet2SyGDYz/H+SXv8sznrtQ=</li><li><strong>org_inv_dk:</strong> FWvyI7s2RjG03BFcEK7mscznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi22030013_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> dtfi000374_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.5243666172027588</td>
+                    <td>0.5560353398323059</td>
+                    <td class='warning'>6.04%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #48</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-08-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 广西养猪公司</li><li><strong>l4_org_inv_nm:</strong> 富川公司</li><li><strong>org_inv_nm:</strong> 富川服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-0914c0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> yGpnOgEWEADgAFuGCgsCAsznrtQ=</li><li><strong>org_inv_dk:</strong> CDhIWgEZEADgBPIQCgsFAsznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi_zy_0653_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> mk02010101_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0066775796003639</td>
+                    <td>-0.0032470205333083</td>
+                    <td class='warning'>-51.37%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #49</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-02-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 山东养猪公司</li><li><strong>l4_org_inv_nm:</strong> 泰莱公司</li><li><strong>org_inv_nm:</strong> 泰莱泉兴种猪场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> Ze/3rtqpTiq+9CC585GCk8znrtQ=</li><li><strong>l4_org_inv_dk:</strong> bDoAACOq7RfM567U</li><li><strong>org_inv_dk:</strong> bDoAALYh4BbM567U</li><li><strong>penetration_metric_nm:</strong> fi22030006_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> death_foundation_sows_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.7747218608856201</td>
+                    <td>-0.6585124135017395</td>
+                    <td class='warning'>-15.00%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #50</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-04-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 江西养猪公司</li><li><strong>l4_org_inv_nm:</strong> 信丰公司</li><li><strong>org_inv_nm:</strong> 信丰青龙服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> vYdxqbyZQBaSHFNJcFqZ1cznrtQ=</li><li><strong>l4_org_inv_dk:</strong> UbLVfgETEADgAFhRfwAAAcznrtQ=</li><li><strong>org_inv_dk:</strong> bDoAAA4LCn7M567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0653_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> mk02010101_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0213103666901588</td>
+                    <td>-0.002773850923404</td>
+                    <td class='warning'>-86.98%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #51</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-07-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 湖北养猪公司</li><li><strong>l4_org_inv_nm:</strong> 咸洪养猪公司</li><li><strong>org_inv_nm:</strong> 咸洪养猪通山服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-09c5c0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> bDoAAgpeSSDM567U</li><li><strong>org_inv_dk:</strong> RCn13XGyRaiw/lCiln50ksznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi_zy_0651_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> mk02010101_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0723900943994522</td>
+                    <td>0.0388229638338089</td>
+                    <td class='warning'>-46.37%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #52</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-11-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 养禽事业部</li><li><strong>l3_org_inv_nm:</strong> 西南养禽公司</li><li><strong>l4_org_inv_nm:</strong> 中江公司</li><li><strong>org_inv_nm:</strong> 德阳饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPm3M567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-0b5ec0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> SCRE7wENEADgDLYKwKgC3sznrtQ=</li><li><strong>org_inv_dk:</strong> XKCFPgEQEADgAU19fwAAAcznrtQ=</li><li><strong>penetration_metric_nm:</strong> feed_formula_amt_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> rice_mix_pur_in_amt_single_ton</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>penetration_status</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                
+                <tr>
+                    <td>coefficient</td>
+                    <td>-1.0</td>
+                    <td>0.0049133155482709</td>
+                    <td class='warning'>-100.49%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_pr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>related_metric_base</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_cr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>weight_calculation_metric_nm</td>
+                    <td>nan</td>
+                    <td>feed_output</td>
+                    <td class='warning'>类型不同</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #53</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-12-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 安徽养猪公司</li><li><strong>l4_org_inv_nm:</strong> 全椒养猪分公司</li><li><strong>org_inv_nm:</strong> 全椒养猪襄河服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> /YeRe87eTSeK5RjMB9JsuMznrtQ=</li><li><strong>l4_org_inv_dk:</strong> vhvLnAESEADgAmOQfwAAAcznrtQ=</li><li><strong>org_inv_dk:</strong> vhvM7gESEADgAgSmfwAAAcznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi_zy_0651_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> dtfi000440_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>342.7740173339844</td>
+                    <td>0.0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #54</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-05-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 西南养猪公司</li><li><strong>l4_org_inv_nm:</strong> 潼南公司</li><li><strong>org_inv_nm:</strong> 潼南金潼服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnTHM567U</li><li><strong>l4_org_inv_dk:</strong> uwQLOOJxTu2RvUxU+OGSE8znrtQ=</li><li><strong>org_inv_dk:</strong> tSLkVh8rRa6X7HQsInGn28znrtQ=</li><li><strong>penetration_metric_nm:</strong> fi_zy_0648_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> dtpd000722_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0162606928497552</td>
+                    <td>0.0112636573612689</td>
+                    <td class='warning'>-30.73%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #55</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-06-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 山东养猪公司</li><li><strong>l4_org_inv_nm:</strong> 聊城公司</li><li><strong>org_inv_nm:</strong> 聊城崇文服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> Ze/3rtqpTiq+9CC585GCk8znrtQ=</li><li><strong>l4_org_inv_dk:</strong> bDoAAgpjR2rM567U</li><li><strong>org_inv_dk:</strong> bDoAADGEuHDM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0656_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> fi23000001</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0011162855662405</td>
+                    <td>-0.0006107005174271</td>
+                    <td class='warning'>-45.29%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #56</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-10-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 秦晋养猪公司</li><li><strong>l4_org_inv_nm:</strong> 阳城公司</li><li><strong>org_inv_nm:</strong> 阳城芹池服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAACVgM6HM567U</li><li><strong>l4_org_inv_dk:</strong> bDoAACvjp8LM567U</li><li><strong>org_inv_dk:</strong> bDoAADZKxMXM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0651_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> dtfi000440_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>154.60093688964844</td>
+                    <td>99.5960464477539</td>
+                    <td class='warning'>-35.58%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #57</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-12-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 华北养猪公司</li><li><strong>l4_org_inv_nm:</strong> 沧盐公司</li><li><strong>org_inv_nm:</strong> 沧盐大褚服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> A3bSmAEREADgBgEQfwAAAcznrtQ=</li><li><strong>l4_org_inv_dk:</strong> bDoAAgheYg3M567U</li><li><strong>org_inv_dk:</strong> bDoAABI8q93M567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0653_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> mk02010101_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0157989729195833</td>
+                    <td>0.0087754065170884</td>
+                    <td class='warning'>-44.46%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #58</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-10-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 华农温氏</li><li><strong>l4_org_inv_nm:</strong> 英德公司</li><li><strong>org_inv_nm:</strong> 英德英州饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-13aac0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-1582c0a802deCCE7AED4</li><li><strong>org_inv_dk:</strong> Nt/5rZm8QA+6x8yfQ8Oom8znrtQ=</li><li><strong>penetration_metric_nm:</strong> feed_fee_cost_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> fi23000005</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-6.298861026763916</td>
+                    <td>-12.126104354858398</td>
+                    <td class='warning'>92.51%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #59</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-02-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 湖南养猪公司</li><li><strong>l4_org_inv_nm:</strong> 新田公司</li><li><strong>org_inv_nm:</strong> 新田塔峰服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAALccnaHM567U</li><li><strong>l4_org_inv_dk:</strong> bDoAABGfw5fM567U</li><li><strong>org_inv_dk:</strong> bDoAACmeEZfM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0653_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> mk01010101_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.3000181317329407</td>
+                    <td>-0.0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #60</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-08-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 广西养猪公司</li><li><strong>l4_org_inv_nm:</strong> 怀集公司</li><li><strong>org_inv_nm:</strong> 怀集南丰服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-0914c0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-0958c0a802deCCE7AED4</li><li><strong>org_inv_dk:</strong> xSPvd6trTD6xTEyGgpK2dsznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi_zy_0645_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> mk02010101_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0316679887473583</td>
+                    <td>-0.0517141930758953</td>
+                    <td class='warning'>63.30%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #61</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-10-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 贵州养猪公司</li><li><strong>l4_org_inv_nm:</strong> 福泉公司</li><li><strong>org_inv_nm:</strong> （停用）麻江孟江服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> 687PFKmaTV6TDyWjmWtuYMznrtQ=</li><li><strong>l4_org_inv_dk:</strong> bDoAACGSOsvM567U</li><li><strong>org_inv_dk:</strong> bDoAAAHq5YvM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0645_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> mk02010101_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0185086131095886</td>
+                    <td>0.025361955165863</td>
+                    <td class='warning'>37.03%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #62</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-03-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 海南温氏</li><li><strong>l3_org_inv_nm:</strong> （停用）琼海公司</li><li><strong>l4_org_inv_nm:</strong> 儋州养猪服务部</li><li><strong>org_inv_nm:</strong> 儋州养猪服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAVsTq8rM567U</li><li><strong>l3_org_inv_dk:</strong> FyGd/dJuTU2M2BkkpGq5IcznrtQ=</li><li><strong>l4_org_inv_dk:</strong> vhvLnAESEADgAjszfwAAAcznrtQ=</li><li><strong>org_inv_dk:</strong> vhvLnAESEADgAjszfwAAAcznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi_zy_0654_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> dtmk000011_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0097634568810462</td>
+                    <td>0.0149175710976123</td>
+                    <td class='warning'>52.79%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #63</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-05-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 秦晋养猪公司</li><li><strong>l4_org_inv_nm:</strong> 旬邑公司</li><li><strong>org_inv_nm:</strong> 旬邑门家种猪场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAACVgM6HM567U</li><li><strong>l4_org_inv_dk:</strong> bDoAACLCNEvM567U</li><li><strong>org_inv_dk:</strong> bDoAAJ7H6avM567U</li><li><strong>penetration_metric_nm:</strong> fi22030006_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> death_reserve_sows_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0250828359276056</td>
+                    <td>0.0107590453699231</td>
+                    <td class='warning'>-57.11%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #64</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-08-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 江苏养猪公司</li><li><strong>l4_org_inv_nm:</strong> 淮安养猪分公司</li><li><strong>org_inv_nm:</strong> 淮安养猪天源一级小区</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnW7M567U</li><li><strong>l4_org_inv_dk:</strong> XD79dAEQEADgAlufCgsE3sznrtQ=</li><li><strong>org_inv_dk:</strong> bDoAAYHYKvLM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0655_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> mk02010101_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0009847925975918</td>
+                    <td>0.0019694818183779</td>
+                    <td class='warning'>99.99%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #65</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-12-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 西南养猪公司</li><li><strong>l4_org_inv_nm:</strong> 合江公司</li><li><strong>org_inv_nm:</strong> 合江大营扩繁场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnTHM567U</li><li><strong>l4_org_inv_dk:</strong> bDoAACzmy7LM567U</li><li><strong>org_inv_dk:</strong> bDoAADhT7XPM567U</li><li><strong>penetration_metric_nm:</strong> fi22030006_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> dtpd000724_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>3.704677581787109</td>
+                    <td>4.623052597045898</td>
+                    <td class='warning'>24.79%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #66</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-02-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 湖北养猪公司</li><li><strong>l4_org_inv_nm:</strong> 安仁养猪公司</li><li><strong>org_inv_nm:</strong> 安仁养猪青路服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-09c5c0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> Qcnc6hxCRRyshQwk5ApGOsznrtQ=</li><li><strong>org_inv_dk:</strong> dwDakAhpSwuDa9RnRdDbVsznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi_zy_0649_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> pd39010008_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0231648813933134</td>
+                    <td>-0.0177343655377626</td>
+                    <td class='warning'>-23.44%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #67</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-06-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 江苏养猪公司</li><li><strong>l4_org_inv_nm:</strong> 连云港养猪分公司</li><li><strong>org_inv_nm:</strong> 连云港养猪洪庄服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnW7M567U</li><li><strong>l4_org_inv_dk:</strong> 0Af31gEUEADgABCvCgsFAcznrtQ=</li><li><strong>org_inv_dk:</strong> FTJMUVaESYqSZMVnWmvlCsznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi_zy_0656_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> fi23000001</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-5.220886305323802e-05</td>
+                    <td>-0.0010956521145999</td>
+                    <td class='warning'>1998.59%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #68</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-04-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 贵州养猪公司</li><li><strong>l4_org_inv_nm:</strong> 铜仁公司</li><li><strong>org_inv_nm:</strong> 铜仁香坝服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> 687PFKmaTV6TDyWjmWtuYMznrtQ=</li><li><strong>l4_org_inv_dk:</strong> bDoAAAq9huXM567U</li><li><strong>org_inv_dk:</strong> bDoAAClfz1TM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0645_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> mk02010101_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0377077087759971</td>
+                    <td>0.0509727448225021</td>
+                    <td class='warning'>35.18%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #69</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-01-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 西南养猪公司</li><li><strong>l4_org_inv_nm:</strong> 潼南公司</li><li><strong>org_inv_nm:</strong> 潼南金渝服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnTHM567U</li><li><strong>l4_org_inv_dk:</strong> uwQLOOJxTu2RvUxU+OGSE8znrtQ=</li><li><strong>org_inv_dk:</strong> bDoAAAPx3j7M567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0649_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> pd39010008_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0086301565170288</td>
+                    <td>0.0096805179491639</td>
+                    <td class='warning'>12.17%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #70</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-07-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 粤西养猪公司</li><li><strong>l4_org_inv_nm:</strong> 开恩平公司</li><li><strong>org_inv_nm:</strong> 开恩平塘美种猪场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAJoq3M/M567U</li><li><strong>l4_org_inv_dk:</strong> e5fb68e5-0109-1000-e001-feb9c0a802deCCE7AED4</li><li><strong>org_inv_dk:</strong> X6Ka4wEUEADgEK17CgsFAsznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi22030010_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> pd52010209_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0005586962797679</td>
+                    <td>-0.0005204664194025</td>
+                    <td class='warning'>-6.84%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #71</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-05-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 江苏养猪公司</li><li><strong>l4_org_inv_nm:</strong> 滨海公司</li><li><strong>org_inv_nm:</strong> 滨海育才服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnW7M567U</li><li><strong>l4_org_inv_dk:</strong> gd4n3LXrR/SfstbezbRoUcznrtQ=</li><li><strong>org_inv_dk:</strong> bDoAABbpDrHM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0655_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> dtmk000011_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0005007266881875</td>
+                    <td>0.0004628443566616</td>
+                    <td class='warning'>-7.57%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #72</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-06-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 云南养猪公司</li><li><strong>l4_org_inv_nm:</strong> 沾益公司</li><li><strong>org_inv_nm:</strong> 沾益富源服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAEhzj67M567U</li><li><strong>l4_org_inv_dk:</strong> bDoAABnUGuvM567U</li><li><strong>org_inv_dk:</strong> bDoAAc2DzIzM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0654_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> dtmk000011_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0050443457439541</td>
+                    <td>0.0077072489075362</td>
+                    <td class='warning'>52.79%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #73</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-11-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 山东养猪公司</li><li><strong>l4_org_inv_nm:</strong> 宁济公司</li><li><strong>org_inv_nm:</strong> 宁济金城服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> Ze/3rtqpTiq+9CC585GCk8znrtQ=</li><li><strong>l4_org_inv_dk:</strong> bDoAAgpgrtTM567U</li><li><strong>org_inv_dk:</strong> bDoAAIK2NCfM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0651_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> mk02010101_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.1236434578895568</td>
+                    <td>-0.0663102492690086</td>
+                    <td class='warning'>-46.37%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #74</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-09-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 安徽养猪公司</li><li><strong>l4_org_inv_nm:</strong> 全椒养猪分公司</li><li><strong>org_inv_nm:</strong> 全椒养猪沙石种猪场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> /YeRe87eTSeK5RjMB9JsuMznrtQ=</li><li><strong>l4_org_inv_dk:</strong> vhvLnAESEADgAmOQfwAAAcznrtQ=</li><li><strong>org_inv_dk:</strong> lwSyrTJYQpKocvlNnkNfVsznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi22030016_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> fi_zy_0644_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0</td>
+                    <td>-0.3533491492271423</td>
+                    <td class='warning'>∞</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #75</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-04-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 山东养猪公司</li><li><strong>l4_org_inv_nm:</strong> 聊城公司</li><li><strong>org_inv_nm:</strong> 聊城清水种猪场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> Ze/3rtqpTiq+9CC585GCk8znrtQ=</li><li><strong>l4_org_inv_dk:</strong> bDoAAgpjR2rM567U</li><li><strong>org_inv_dk:</strong> bDoAAExQ2YfM567U</li><li><strong>penetration_metric_nm:</strong> fi22030013_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> dtfi000374_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0186450369656085</td>
+                    <td>0.0197710897773504</td>
+                    <td class='warning'>6.04%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #76</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-02-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 云南养猪公司</li><li><strong>l4_org_inv_nm:</strong> 安龙公司</li><li><strong>org_inv_nm:</strong> 安龙龙城服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAEhzj67M567U</li><li><strong>l4_org_inv_dk:</strong> 9JNzxMlaT0eNLKIH1QpJg8znrtQ=</li><li><strong>org_inv_dk:</strong> bDoAAC/faUjM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0654_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> mk02010101_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0374958477914333</td>
+                    <td>-0.0326307564973831</td>
+                    <td class='warning'>-12.98%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #77</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-05-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 山东养猪公司</li><li><strong>l4_org_inv_nm:</strong> 聊城公司</li><li><strong>org_inv_nm:</strong> 聊城清水种猪场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> Ze/3rtqpTiq+9CC585GCk8znrtQ=</li><li><strong>l4_org_inv_dk:</strong> bDoAAgpjR2rM567U</li><li><strong>org_inv_dk:</strong> bDoAAExQ2YfM567U</li><li><strong>penetration_metric_nm:</strong> fi22030013_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> dtfi000374_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.5331045985221863</td>
+                    <td>-0.5653010606765747</td>
+                    <td class='warning'>6.04%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #78</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-08-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 温氏投资</li><li><strong>l3_org_inv_nm:</strong> 京海禽业公司</li><li><strong>l4_org_inv_nm:</strong> 海门公司</li><li><strong>org_inv_nm:</strong> （停用）京海禽业有机肥厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAEm8PALM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAtme+kPM567U</li><li><strong>l4_org_inv_dk:</strong> bDoAAItTAjvM567U</li><li><strong>org_inv_dk:</strong> bDoAAItXVh3M567U</li><li><strong>penetration_metric_nm:</strong> feed_formula_amt_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> bean_pulp_pur_in_amt_single_ton</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>coefficient</td>
+                    <td>-1.0</td>
+                    <td>0.112217434437933</td>
+                    <td class='warning'>-111.22%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_pr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>related_metric_base</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #79</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-06-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 秦晋养猪公司</li><li><strong>l4_org_inv_nm:</strong> 长子公司</li><li><strong>org_inv_nm:</strong> 长子饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAACVgM6HM567U</li><li><strong>l4_org_inv_dk:</strong> bDoAAASblj7M567U</li><li><strong>org_inv_dk:</strong> bDoAANpvOw7M567U</li><li><strong>penetration_metric_nm:</strong> feed_fee_cost_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> feed_output_ton</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>29.39628791809082</td>
+                    <td>20.16044807434082</td>
+                    <td class='warning'>-31.42%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #80</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-06-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 湖北养猪公司</li><li><strong>l4_org_inv_nm:</strong> 孝团养猪公司</li><li><strong>org_inv_nm:</strong> 孝团养猪花园服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-09c5c0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> bDoAAgpgrXnM567U</li><li><strong>org_inv_dk:</strong> VkIp0rXsQ3e0BLPvdba5SMznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi_zy_0656_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> fi23000002</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0108202556148171</td>
+                    <td>0.0237072333693504</td>
+                    <td class='warning'>119.10%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #81</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-02-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 江苏养猪公司</li><li><strong>l4_org_inv_nm:</strong> 淮阴公司</li><li><strong>org_inv_nm:</strong> 淮阴饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnW7M567U</li><li><strong>l4_org_inv_dk:</strong> bDoAACDbXxDM567U</li><li><strong>org_inv_dk:</strong> bDoAAfhx9sXM567U</li><li><strong>penetration_metric_nm:</strong> feed_formula_amt_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> sorghum_pur_in_amt_single_ton</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>penetration_status</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                
+                <tr>
+                    <td>coefficient</td>
+                    <td>-1.0000000000000002</td>
+                    <td>-0.0033060325167231</td>
+                    <td class='warning'>-99.67%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_pr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>related_metric_base</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_cr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>weight_calculation_metric_nm</td>
+                    <td>nan</td>
+                    <td>feed_output</td>
+                    <td class='warning'>类型不同</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #82</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-03-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 广西养猪公司</li><li><strong>l4_org_inv_nm:</strong> 富川公司</li><li><strong>org_inv_nm:</strong> 富川长春种猪场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-0914c0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> yGpnOgEWEADgAFuGCgsCAsznrtQ=</li><li><strong>org_inv_dk:</strong> bDoAAK6eayHM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0621_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> Net_culling_of_reserve_sows_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.375607967376709</td>
+                    <td>0.5415674448013306</td>
+                    <td class='warning'>44.18%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #83</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-03-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 安徽养猪公司</li><li><strong>l4_org_inv_nm:</strong> 定远公司</li><li><strong>org_inv_nm:</strong> 肥东大桥种猪一场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> /YeRe87eTSeK5RjMB9JsuMznrtQ=</li><li><strong>l4_org_inv_dk:</strong> bDoAADnVA2DM567U</li><li><strong>org_inv_dk:</strong> bDoAAETu4+bM567U</li><li><strong>penetration_metric_nm:</strong> fi22030016_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> fi_zy_0644_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>1.060285568237305</td>
+                    <td>1.1736780405044556</td>
+                    <td class='warning'>10.69%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #84</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-10-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 湖北养猪公司</li><li><strong>l4_org_inv_nm:</strong> 安仁养猪公司</li><li><strong>org_inv_nm:</strong> 安仁养猪饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-09c5c0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> Qcnc6hxCRRyshQwk5ApGOsznrtQ=</li><li><strong>org_inv_dk:</strong> bDoAAC/eXYDM567U</li><li><strong>penetration_metric_nm:</strong> feed_fee_cost_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> feed_other_fee</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0</td>
+                    <td>10.68952465057373</td>
+                    <td class='warning'>∞</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #85</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-09-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 西南养猪公司</li><li><strong>l4_org_inv_nm:</strong> 巴中公司</li><li><strong>org_inv_nm:</strong> 巴中鼎山服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnTHM567U</li><li><strong>l4_org_inv_dk:</strong> bDoAACAKQPDM567U</li><li><strong>org_inv_dk:</strong> bDoAAD7cC5LM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0649_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> pd39010008_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0035442714579403</td>
+                    <td>0.0032085084822028</td>
+                    <td class='warning'>-9.47%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #86</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-04-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 秦晋养猪公司</li><li><strong>l4_org_inv_nm:</strong> 长子公司</li><li><strong>org_inv_nm:</strong> 长子饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAACVgM6HM567U</li><li><strong>l4_org_inv_dk:</strong> bDoAAASblj7M567U</li><li><strong>org_inv_dk:</strong> bDoAANpvOw7M567U</li><li><strong>penetration_metric_nm:</strong> feed_fee_cost_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> feed_other_fee</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.1959107518196106</td>
+                    <td>-0.0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #87</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-01-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 华农温氏</li><li><strong>l4_org_inv_nm:</strong> 韶关公司</li><li><strong>org_inv_nm:</strong> 韶关南雄饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-13aac0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> 6bb9ae4b-010b-1000-e000-04cec0a802deCCE7AED4</li><li><strong>org_inv_dk:</strong> 1pqG2FXpS1eIQtby7Bb9fMznrtQ=</li><li><strong>penetration_metric_nm:</strong> feed_formula_amt_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> grease_pur_in_amt_single_ton</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>coefficient</td>
+                    <td>-1.0</td>
+                    <td>0.1134758887809796</td>
+                    <td class='warning'>-111.35%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #88</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-04-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 贵州养猪公司</li><li><strong>l4_org_inv_nm:</strong> 遵义公司</li><li><strong>org_inv_nm:</strong> 遵义西秀服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> 687PFKmaTV6TDyWjmWtuYMznrtQ=</li><li><strong>l4_org_inv_dk:</strong> bDoAACY6tgDM567U</li><li><strong>org_inv_dk:</strong> bDoAADVn50zM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0656_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> fi23000002</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>1.9377857096714024e-09</td>
+                    <td>8.915962190769733e-09</td>
+                    <td class='warning'>360.11%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #89</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-06-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 养禽事业部</li><li><strong>l3_org_inv_nm:</strong> 两湖养禽公司</li><li><strong>l4_org_inv_nm:</strong> 监利养鸡公司</li><li><strong>org_inv_nm:</strong> 监利养鸡饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPm3M567U</li><li><strong>l3_org_inv_dk:</strong> y22ajAEcEADgGYceCgsFAsznrtQ=</li><li><strong>l4_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-0ae4c0a802deCCE7AED4</li><li><strong>org_inv_dk:</strong> n93jBgESEADgAYBhfwAAAcznrtQ=</li><li><strong>penetration_metric_nm:</strong> feed_fee_cost_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> fi23000050</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-26.12492179870605</td>
+                    <td>-0.0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #90</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-06-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 贵州养猪公司</li><li><strong>l4_org_inv_nm:</strong> 福泉公司</li><li><strong>org_inv_nm:</strong> 福泉余庆服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> 687PFKmaTV6TDyWjmWtuYMznrtQ=</li><li><strong>l4_org_inv_dk:</strong> bDoAACGSOsvM567U</li><li><strong>org_inv_dk:</strong> bDoAAEz4dHXM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0655_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> mk01010101_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.1456305533647537</td>
+                    <td>-0.0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #91</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-10-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 华农温氏</li><li><strong>l4_org_inv_nm:</strong> 新佛公司</li><li><strong>org_inv_nm:</strong> 新佛石角服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-13aac0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-147ec0a802deCCE7AED4</li><li><strong>org_inv_dk:</strong> 05a717fe-010a-1000-e001-cdebc0a802deCCE7AED4</li><li><strong>penetration_metric_nm:</strong> fi_zy_0651_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> dtfi000440_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-155.60520935058594</td>
+                    <td>-123.74665832519533</td>
+                    <td class='warning'>-20.47%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #92</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-05-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 西南养猪公司</li><li><strong>l4_org_inv_nm:</strong> 珙县公司</li><li><strong>org_inv_nm:</strong> 珙县南广服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnTHM567U</li><li><strong>l4_org_inv_dk:</strong> bDoAADGI0kzM567U</li><li><strong>org_inv_dk:</strong> bDoAADbX3GrM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0656_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> fi23000001</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0012986141955479</td>
+                    <td>-0.0021105068735778</td>
+                    <td class='warning'>62.52%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #93</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-12-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 粤西养猪公司</li><li><strong>l4_org_inv_nm:</strong> 阳东公司</li><li><strong>org_inv_nm:</strong> 阳东新墟种猪三场</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAJoq3M/M567U</li><li><strong>l4_org_inv_dk:</strong> O+Ur/wEVEADgAKFSCgsCAsznrtQ=</li><li><strong>org_inv_dk:</strong> bDoAAATOyj/M567U</li><li><strong>penetration_metric_nm:</strong> fi22030010_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_BOAR_COST</li><li><strong>index_nm:</strong> fi_zy_0622_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0446041822433471</td>
+                    <td>-0.0484709180891513</td>
+                    <td class='warning'>8.67%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #94</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-04-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 秦晋养猪公司</li><li><strong>l4_org_inv_nm:</strong> 新大牧业公司</li><li><strong>org_inv_nm:</strong> 新大伊川服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAACVgM6HM567U</li><li><strong>l4_org_inv_dk:</strong> bDoAAJbUGxzM567U</li><li><strong>org_inv_dk:</strong> bDoAAK1S1wbM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0653_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> mk02010101_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>0.0955531075596809</td>
+                    <td>0.0124376118183135</td>
+                    <td class='warning'>-86.98%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #95</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-06-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 江苏养猪公司</li><li><strong>l4_org_inv_nm:</strong> 连云港养猪分公司</li><li><strong>org_inv_nm:</strong> 连云港养猪洪庄服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnW7M567U</li><li><strong>l4_org_inv_dk:</strong> 0Af31gEUEADgABCvCgsFAcznrtQ=</li><li><strong>org_inv_dk:</strong> FTJMUVaESYqSZMVnWmvlCsznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi_zy_0655_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> dtmk000011_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0007200937834568</td>
+                    <td>-0.0006656152545474</td>
+                    <td class='warning'>-7.57%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #96</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-11-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 云南养猪公司</li><li><strong>l4_org_inv_nm:</strong> 安龙公司</li><li><strong>org_inv_nm:</strong> 安龙饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAEhzj67M567U</li><li><strong>l4_org_inv_dk:</strong> 9JNzxMlaT0eNLKIH1QpJg8znrtQ=</li><li><strong>org_inv_dk:</strong> bDoAAInXn+DM567U</li><li><strong>penetration_metric_nm:</strong> feed_fee_cost_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> feed_other_fee</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0776212960481643</td>
+                    <td>-0.4196422398090362</td>
+                    <td class='warning'>440.63%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #97</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-05-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业一部</li><li><strong>l3_org_inv_nm:</strong> 广西养猪公司</li><li><strong>l4_org_inv_nm:</strong> 贺桂公司</li><li><strong>org_inv_nm:</strong> 贺桂庙岭服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAACAKPqrM567U</li><li><strong>l3_org_inv_dk:</strong> e5fb68e5-0109-1000-e002-0914c0a802deCCE7AED4</li><li><strong>l4_org_inv_dk:</strong> vf10ukSIQ/iu3/DhYjFKP8znrtQ=</li><li><strong>org_inv_dk:</strong> Eud+u/guShWWhBbR5gep0sznrtQ=</li><li><strong>penetration_metric_nm:</strong> fi_zy_0645_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> mk02010101_single</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>-0.0152759412303566</td>
+                    <td>-0.0282382685691118</td>
+                    <td class='warning'>84.85%</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #98</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-05-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 安徽养猪公司</li><li><strong>l4_org_inv_nm:</strong> 埇桥养猪公司</li><li><strong>org_inv_nm:</strong> 埇桥饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> /YeRe87eTSeK5RjMB9JsuMznrtQ=</li><li><strong>l4_org_inv_dk:</strong> bDoAABqwZprM567U</li><li><strong>org_inv_dk:</strong> bDoAAI9fNgTM567U</li><li><strong>penetration_metric_nm:</strong> feed_formula_amt_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> rice_mix_pur_in_amt_single_ton</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>penetration_status</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                
+                <tr>
+                    <td>coefficient</td>
+                    <td>-1.0</td>
+                    <td>0.0049133155482709</td>
+                    <td class='warning'>-100.49%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_pr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>related_metric_base</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_cr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>weight_calculation_metric_nm</td>
+                    <td>nan</td>
+                    <td>feed_output</td>
+                    <td class='warning'>类型不同</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #99</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2025-02-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业二部</li><li><strong>l3_org_inv_nm:</strong> 江苏养猪公司</li><li><strong>l4_org_inv_nm:</strong> 淮安养猪分公司</li><li><strong>org_inv_nm:</strong> 淮安养猪饲料厂</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAL2o1ffM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAAAlCnW7M567U</li><li><strong>l4_org_inv_dk:</strong> XD79dAEQEADgAlufCgsE3sznrtQ=</li><li><strong>org_inv_dk:</strong> aJ1tWgETEADgAFd/fwAAAcznrtQ=</li><li><strong>penetration_metric_nm:</strong> feed_formula_amt_single_ton</li><li><strong>index_kd:</strong> ads_feed_factory_mgmt_acctnt_w</li><li><strong>index_nm:</strong> sorghum_pur_in_amt_single_ton</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>penetration_status</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td class='warning'>-100.00%</td>
+                </tr>
+                
+                <tr>
+                    <td>coefficient</td>
+                    <td>-1.0000000000000002</td>
+                    <td>-0.0033060325167231</td>
+                    <td class='warning'>-99.67%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_pr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>related_metric_base</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>index_cr</td>
+                    <td>nan</td>
+                    <td>0.0</td>
+                    <td class='warning'>nan%</td>
+                </tr>
+                
+                <tr>
+                    <td>weight_calculation_metric_nm</td>
+                    <td>nan</td>
+                    <td>feed_output</td>
+                    <td class='warning'>类型不同</td>
+                </tr>
+                </table></div>
+                <div class="stats-card">
+                    <h4>差异记录 #100</h4>
+                    <p><strong>匹配维度:</strong></p>
+                    <ul>
+            <li><strong>program_running_date:</strong> 2025-06-11</li><li><strong>stats_dt:</strong> 2024-11-01</li><li><strong>l1_org_inv_nm:</strong> 温氏股份</li><li><strong>l2_org_inv_nm:</strong> 猪业三部</li><li><strong>l3_org_inv_nm:</strong> 秦晋养猪公司</li><li><strong>l4_org_inv_nm:</strong> 咸阳公司</li><li><strong>org_inv_nm:</strong> 咸阳方里服务部</li><li><strong>l1_org_inv_dk:</strong> 00000000-0000-0000-0000-000000000000CCE7AED4</li><li><strong>l2_org_inv_dk:</strong> bDoAAZa+CnHM567U</li><li><strong>l3_org_inv_dk:</strong> bDoAACVgM6HM567U</li><li><strong>l4_org_inv_dk:</strong> 8wAW2QEZEADgBp3ECgsFAsznrtQ=</li><li><strong>org_inv_dk:</strong> bDoAABONTUPM567U</li><li><strong>penetration_metric_nm:</strong> fi_zy_0656_single</li><li><strong>index_kd:</strong> ADS_INDEX_CHANGE_HOG_COST</li><li><strong>index_nm:</strong> fi23000002</li></ul><p><strong>数据差异:</strong></p><table class='diff-table'><tr><th>列名</th><th>文件1值</th><th>文件2值</th><th>差异</th></tr>
+                <tr>
+                    <td>index_cr</td>
+                    <td>2.325342940423525e-08</td>
+                    <td>1.0699154984195049e-07</td>
+                    <td class='warning'>360.11%</td>
+                </tr>
+                </table></div><p class='info'>还有 97824 条差异记录未显示...</p>
+            </div>
+            
+            <div class="section">
+                <h2>📊 分析说明</h2>
+                <ul>
+                    <li><strong>匹配标准:</strong> 基于 program_running_date, stats_dt, l1_org_inv_nm, l2_org_inv_nm, l3_org_inv_nm, l4_org_inv_nm, org_inv_nm, l1_org_inv_dk, l2_org_inv_dk, l3_org_inv_dk, l4_org_inv_dk, org_inv_dk, index_kd, index_nm 等维度进行匹配</li>
+                    <li><strong>相似性判断:</strong> 数值差距在5%以内视为相近</li>
+                    <li><strong>差异统计:</strong> 统计了不一致记录在各维度的分布</li>
+                    <li><strong>容差设置:</strong> {self.tolerance*100}%</li>
+                </ul>
+            </div>
+        </body>
+        </html>
+        
